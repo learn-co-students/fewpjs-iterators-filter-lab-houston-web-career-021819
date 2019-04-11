@@ -14,13 +14,13 @@
 // }
 
 function findMatching(array, string){
-    return array.filter((item) => item.toLowerCase() === string.toLowerCase())
+    return array.filter( item => item.toLowerCase() === string.toLowerCase())
 }
 
 function fuzzyMatch(array, string){
-    return array.filter((item) => item.toLowerCase().slice(0, string.length) === string.toLowerCase())
+    return array.filter( item => item.toLowerCase().slice(0, string.length) === string.toLowerCase())
 }
 
 function matchName(array, string){
-    return array.filter( (item) => item.name.toLowerCase() === string.toLowerCase() )
+    return array.filter( item => item.name.toLowerCase() === string.toLowerCase() )
 }
